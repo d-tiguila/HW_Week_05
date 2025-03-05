@@ -16,7 +16,7 @@ for (let step = 0; step < linesNum; step++) {
     let normalizedStep = step / linesNum;
     // factor de crecimiento de distancia entre linea
     let factor = (Math.exp(normalizedStep * k) - 1) / (Math.exp(k) - 1);
-    factor = (normalizedStep + factor) / 2;
+    factor = (normalizedStep + factor) / 2.4;
 
     let spacing = C * factor;
     console.log(spacing);
