@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 
 // numero de lineas
 let linesNum = Math.max(canvas.height, canvas.width);
-
+// distancia entre lineas
 let C = linesNum * 2;
 let k = 120;
 
