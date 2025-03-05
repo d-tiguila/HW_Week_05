@@ -5,16 +5,18 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 
 
-
+// numero de lineas
 let linesNum = Math.max(canvas.height, canvas.width);
+
 let C = linesNum * 2;
 let k = 120;
 
 for (let step = 0; step < linesNum; step++) {
     //Funcion Exponencia para distancia entra lineas :)
     let normalizedStep = step / linesNum;
+    // factor de crecimiento de distancia entre linea
     let factor = (Math.exp(normalizedStep * k) - 1) / (Math.exp(k) - 1);
-    factor = (normalizedStep + factor) / 2.;
+    factor = (normalizedStep + factor) / 2;
 
     let spacing = C * factor;
     console.log(spacing);

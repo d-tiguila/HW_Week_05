@@ -6,7 +6,7 @@ const ctx = canvas.getContext('2d');
 const circleRadio = canvas.height*.1;
 console.log(circleRadio);
 
-
+//Funcion por cada figura en la composicion
 
 function fullCricle(y,x){
 
@@ -77,6 +77,8 @@ function rotHalfCricle(y,x){
 
 ctx.fillStyle = "#124528";
 ctx.globalAlpha = 1;
+
+//asignar funcion de acuardo a la posicion de cada figura en la matrix, no se uso un ciclor for ya que no hay patron definido
 
     fullCricle(0,0);
     halfCricle(1,0);
