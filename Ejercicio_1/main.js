@@ -12,12 +12,12 @@ function fullCricle(y,x){
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI, Math.PI * 2);
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI, Math.PI * 2);
     ctx.fill();
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+circleRadio*2*x,(canvas.height*.202)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI*2, Math.PI);
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height*.202)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI*2, Math.PI);
     ctx.fill();
 
 
@@ -28,12 +28,12 @@ function rotFullCricle(y,x){
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2 );
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2 );
     ctx.fill();
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.302)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
+    ctx.ellipse((canvas.width*.332)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
     ctx.fill();
 
 
@@ -44,13 +44,13 @@ function halfCricle(y,x){
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+(circleRadio*2*x),canvas.height*0.2+circleRadio*((2*y)-1),circleRadio,circleRadio,0,Math.PI*2, Math.PI);
+    ctx.ellipse((canvas.width*.33)+(circleRadio*2*x),canvas.height*0.2+circleRadio*((2*y)-1),circleRadio,circleRadio,0,Math.PI*2, Math.PI);
     ctx.fill();
 
     
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+circleRadio*2*x,(canvas.height * 0.2) + circleRadio * (2 * y + 1),circleRadio,circleRadio,0,Math.PI, Math.PI * 2);
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height * 0.2) + circleRadio * (2 * y + 1),circleRadio,circleRadio,0,Math.PI, Math.PI * 2);
     ctx.fill();
 
 
@@ -62,24 +62,25 @@ function rotHalfCricle(y,x){
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+(circleRadio*2*x)-circleRadio,canvas.height*0.2+circleRadio*((2*y)),circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
+    ctx.ellipse((canvas.width*.33)+(circleRadio*2*x)-circleRadio,canvas.height*0.2+circleRadio*((2*y)),circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
     ctx.fill();
 
     
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.3)+circleRadio*2*x+circleRadio,(canvas.height * 0.2) + circleRadio * (2 * y),circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2);
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x+circleRadio,(canvas.height * 0.2) + circleRadio * (2 * y),circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2);
     ctx.fill();
 
 
 
 }
-
+// definar color  glbal
 ctx.fillStyle = "#124528";
+
+
+//dibujar funcion de acuardo a la posicion de cada figura en la matrix, no se uso un ciclor for ya que no hay patron definido
+// definar opacidad de acuardo al numero de columna
 ctx.globalAlpha = 1;
-
-//asignar funcion de acuardo a la posicion de cada figura en la matrix, no se uso un ciclor for ya que no hay patron definido
-
     fullCricle(0,0);
     halfCricle(1,0);
     rotFullCricle(2,0);
