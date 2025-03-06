@@ -28,12 +28,12 @@ function rotFullCricle(y,x){
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2 );
+    ctx.ellipse((canvas.width*.329)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,Math.PI/2, (3 * Math.PI)/2 );
     ctx.fill();
 
     ctx.beginPath();
     ctx.lineWidth = 0;
-    ctx.ellipse((canvas.width*.332)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
+    ctx.ellipse((canvas.width*.33)+circleRadio*2*x,(canvas.height*.20)+circleRadio*2*y,circleRadio,circleRadio,0,(3 * Math.PI)/2, Math.PI/2);
     ctx.fill();
 
 
